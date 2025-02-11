@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Opitien's">
+  <title>About · Opitien's</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" class="favicon" style="border-radius: 50%;">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    :root {
+      --background-light: #f0f0f0;
+      --text-light: #333333;
+      --background-dark: #333333;
+      --text-dark: #f0f0f0;
+      --primary-color: #007bff;
+      --primary-color-dark: #0056b3;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--background-light);
+      color: var(--text-light);
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: var(--background-light);
+      color: var(--text-light);
+    }
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: var(--background-dark);
+    }
+    .navbar-nav {
+      margin-left: auto;
+    }
+    .navbar-nav .nav-item {
+      margin: 0 15px;
+    }
+    .navbar-nav .nav-link {
+      font-family: 'Pacifico', cursive;
+      color: var(--text-dark);
+    }
+    .navbar-brand {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+      margin-left: 20px;
+      color: var(--text-dark);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Pacifico', cursive;
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+    }
+    .jumbotron {
+      background-color: var(--text-dark);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-color-dark);
+      border-color: var(--primary-color-dark);
+    }
+    .footer {
+      background: var(--background-dark);
+      height: auto;
+      padding: 20px 0;
+      width: 100%;
+      color: var(--text-dark);
+    }
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    .social-icons img:hover,
+    .social-icons img:focus {
+      filter: grayscale(0%);
+    }
+    .favicon {
+      border-radius: 50%;
+    }
+    .light-mode .footer {
+      background: var(--background-dark);
+      color: var(--text-dark);
+    }
+    .light-mode .table {
+      color: var(--text-light);
+    }
+    .light-mode .table td, .light-mode .table th {
+      color: var(--text-light);
+    }
+    .container {
+    }
+    .jumbotron p {
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      Opitien's
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron mt-4">
+      <h1 class="display-4">About Me</h1>
+      <p class="lead">Learn more about me and my journey as a web designer.</p>
+      <hr class="my-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bio</td>
+            <td>I’m a 21-year-old web designer based in Delta State, with a passion for creating visually appealing and user-friendly websites. With experience in both design and front-end development, I specialize in crafting responsive, intuitive websites that combine creativity with functionality. I enjoy collaborating with clients to bring their ideas to life, ensuring their digital presence stands out and performs beautifully across all devices.</td>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>
+              <ul>
+                <li>Bachelor of Science in Computer Science, FUPRE, 2023-2025(Present) </li>
+                <li>FullStack Bootcamp Udemy, 2022-2025(Present)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Experience</td>
+            <td>
+              <ul>
+                <li>2023-2024: IT Personnel @ Proton Courier</li>
+                <li>2024-Present: Freelance Web Designer</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Web Skills</td>
+            <td>
+              <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="mr-2">
+              <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="mr-2">
+              <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="mr-2">
+              <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" class="mr-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" alt="jQuery" class="mr-2">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container text-center my-4 social-icons">
+    <a href="https://www.instagram.com/opitienedison/" target="_blank" class="mx-2">
+      <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/opitienedison" target="_blank" class="mx-2">
+      <img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.github.com/Opitien" target="_blank" class="mx-2">
+      <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/opitien" target="_blank" class="mx-2">
+      <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn">
+    </a>
+  </div>
+  <footer class="footer">
+    <div class="container text-center">
+      <span>&copy; Designed by Opitien @ 2025. All rights reserved.</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+</body>
+</html>

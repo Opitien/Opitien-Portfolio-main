@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Opitieneddy">
+    <title> Projects ·Opitien's </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" class="favicon" style="border-radius: 50%;">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      :root {
+        --background-light: #f0f0f0;
+        --text-light: #333333;
+        --background-dark: #333333;
+        --text-dark: #f0f0f0;
+        --primary-color: #007bff;
+        --primary-color-dark: #0056b3;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: var(--background-light);
+        color: var(--text-light);
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        background: var(--background-light);
+        color: var(--text-light);
+      }
+      .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5rem;
+        margin-left: 20px;
+        color: var(--text-dark);
+      }
+      .navbar {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: var(--background-dark);
+      }
+      .navbar-nav {
+        margin-left: auto;
+      }
+      .navbar-nav .nav-item {
+        margin: 0 15px;
+      }
+      .navbar-nav .nav-link {
+        font-family: 'Pacifico', cursive;
+        color: var(--text-dark);
+      }
+      .jumbotron {
+        background-color: var(--text-dark);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      .btn-primary:hover {
+        background-color: var(--primary-color-dark);
+        border-color: var(--primary-color-dark);
+      }
+      .footer {
+        background: var(--background-dark);
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+        color: var(--text-dark);
+      }
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      .social-icons img:hover,
+      .social-icons img:focus {
+        filter: grayscale(0%);
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 5px;
+      }
+      .carousel-item img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+      .container {
+        margin: 20px auto;
+        padding: 20px;
+      }
+      .jumbotron p {
+        max-width: 600px;
+        margin: auto;
+      }
+      .carousel-inner {
+        margin: 40px 0;
+        padding: 20px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Pacifico', cursive;
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+      }
+      .favicon {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo_transparent.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+        Opitien's
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron mt-4">
+        <h1 class="display-4">My Projects</h1>
+        <p class="lead">Here are some of the projects I have worked on.</p>
+        <hr class="my-4">
+        I’ve worked on a variety of front-end projects, designing and developing sleek, responsive websites that deliver an exceptional user experience. From building clean, organized layouts to implementing interactive features with modern web technologies like HTML, CSS, and JavaScript, my projects showcase my ability to blend design with functionality.
+      </div>
+      <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#projectsCarousel" data-slide-to="0" class="active">Energeon :an online nutrition store</li>
+          <li data-target="#projectsCarousel" data-slide-to="1"></li>
+          <li data-target="#projectsCarousel" data-slide-to="2"></li>
+          <li data-target="#projectsCarousel" data-slide-to="3"></li>
+          <li data-target="#projectsCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://energeon.vercel.app/" target="_blank">
+              <img src="assets/img/energeon.png" class="d-block w-100" alt="Project 1">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://opitiene.wixsite.com/ake-gadgets-store" target="_blank">
+              <img src="assets/img/akegagdetstore.png" class="d-block w-100" alt="Project 2">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://example.com/project3" target="_blank">
+              <img src="path/to/your/image3.jpg" class="d-block w-100" alt="Project 3">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://example.com/project4" target="_blank">
+              <img src="path/to/your/image4.jpg" class="d-block w-100" alt="Project 4">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://example.com/project5" target="_blank">
+              <img src="path/to/your/image5.jpg" class="d-block w-100" alt="Project 5">
+            </a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container text-center my-4 social-icons">
+      <a href="https://www.instagram.com/opitienedison/" target="_blank" class="mx-2">
+        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="https://x.com/opitienedison" target="_blank" class="mx-2">
+        <img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.github.com/Opitien" target="_blank" class="mx-2">
+        <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/opitien" target="_blank" class="mx-2">
+        <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+    <footer class="footer">
+      <div class="container text-center">
+        <span>&copy; Designed by Opitien @ 2025. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
