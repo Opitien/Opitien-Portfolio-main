@@ -113,6 +113,21 @@
       .favicon {
         border-radius: 50%;
       }
+      .page-transition {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--background-dark);
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        pointer-events: none; /* Ensure it does not block interactions */
+      }
+      .page-transition.fade-out {
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
@@ -216,5 +231,28 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const transitionElement = document.createElement('div');
+        transitionElement.classList.add('page-transition');
+        document.body.appendChild(transitionElement);
+
+        setTimeout(() => {
+          transitionElement.classList.add('fade-out');
+        }, 500);
+
+        document.querySelectorAll('a').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            if (anchor.href.startsWith(window.location.origin)) {
+              e.preventDefault();
+              transitionElement.classList.remove('fade-out');
+              setTimeout(() => {
+                window.location.href = anchor.href;
+              }, 500);
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
